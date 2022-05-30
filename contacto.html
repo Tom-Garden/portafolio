@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Tomás García Gonzalo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">About Me</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <br>
+        <p>Teléfono: +569 8500 6672</p>
+        <p>Correo electrónico: tomasgarciagonzalo@gmail.com</p>
+    </div>
+
+    <!-- <section class="container my-3" id="contacto">
+        <h2>CONTACTO</h2>
+        <hr class="mx-3">
+        <form action="">
+            <div class="row">
+
+                <div class="col-12">
+                    <label class="p-2" id="txt-nombre">Nombre</label>
+                    <input type="text" class="form-control" id="txt-nombre">
+                </div>
+
+                <div class="col-12">
+                    <label class="p-2" id="txt-correo">Correo electrónico</label>
+                    <input type="text" class="form-control" id="txt-apellido">
+                </div>
+
+                <div class="col-12">
+                    <label class="p-2" id="txt-asunto">Asunto</label>
+                    <input type="text" class="form-control" id="txt-apellido">
+                </div>
+
+                <div class="col-12">
+                    <label class="p-2" id="txt-mensaje">Mensaje</label>
+                    <textarea id="txt-mensahe" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+            </div>
+            <button type="button" style="color: white;" class="btn btn-info mt-2 mb-3" data-bs-toggle="tooltip"
+                id="btn-enviar" data-bs-placement="right"
+                title="Rellenar el formulario y luego enviar el mensaje.">Enviar</button>
+        </form>
+    </section> -->
+    <footer class="footer fixed-bottom">
+        <div class="row text-secondary">
+            <div class="col-6 mt-2">
+                <h2 class="text-center">Tomás García Gonzalo</h2>
+            </div>
+            <div class="col-6 text-center text-secondary mt-2" id="iconoFooter">
+                <a href="https://github.com/Tom-Garden/Tom-Garden" target="_blank"><i class="bi bi-github"></i></a>
+
+                <a href="https://www.linkedin.com/in/tomas-garcia-gonzalo/" target="_blank"><i
+                        class="bi bi-linkedin"></i></a>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script>
+        $(() => {
+            const transporter = nodemailer.createTransport({
+                service: 'gmail',
+                auth: {
+                    user: 'passiflorio@gmail.com',
+                    pass: 'passiflorio123'
+                }
+            });
+
+            let correos = ['tomasgarciagonzalo@gmail.com'];
+
+            const send = async (asunto, contenido, correos) => {
+                const mailOptions = {
+                    from: 'passiflorio@gmail.com',
+                    to: correos,
+                    subject: asunto,
+                    html: contenido
+                }
+
+                transporter.sendMail(mailOptions, (err, info) => {
+                    console.log(info.messageId);
+                });
+            }
+            $("#btn-enviar").on("click", (event) => {
+                event.preventDefault();
+                const nombre = $("#txt-nombre").val();
+                const correo = $("#txt-correo").val();
+                const asunto = $("#txt-asunto").val();
+                const mensaje = $("#txt-mensaje").val();
+
+                const contenido = `${nombre} se ha comunicado con Ud. Para responder, hacerlo al correo electrónico ${correo}
+                    El mensaje que quiere comunicar es:
+                    ${mensaje}`;
+
+                send(asunto,contenido,correos);
+
+                alert("Mensaje enviado con éxito.");
+            });
+        })
+    </script> -->
+</body>
+
+</html>
